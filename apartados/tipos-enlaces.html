@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <title>Tipos de enlaces</title>
+</head>
+<body>
+    <header>
+        <h1>Tipos de enlaces</h1>
+        <p><a name="inicio"></a></p>
+        <ul>
+            <li><a href="#relativos">Relativos</a></li>
+            <li><a href="#anclas">Anclas</a></li>
+            <li><a href="#absolutos">Absolutos</a></li>
+        </ul>      
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Enlaces relativos<a name="relativos"></a></h2>
+                <p>Los enlaces relativos nos permiten ir a contenido en otras páginas existentes en mi árbol de ficheros html.</p>                    
+                <p>Para navegar entre esas páginas deberemos usar una nomeclatura similar a la usada en el sistema de ficheros para nevegar por carpetas.</p>
+            </article>
+            <p><a href="../index.html">Volver</a></p>
+            <p><a href="#inicio">Subir</a></p>
+            <article>
+                <h2>Enlace a la propia página (Anclas)<a name="anclas"></a></h2>
+                <p>Primero se pone el ancla al punto al cual queremos poder desplazarnos dentro del contenido de la página. Para ello usamos la etiqueta a y damos un valor al atributo name</p>
+                <p>Segundo se crea el enlace especificando en el atributo href el nombre que le hemos dado al ancla poniendo delante el carácter #</p>
+            </article>
+            <p><a href="../index.html">Volver</a></p>
+            <p><a href="#inicio">Subir</a></p>
+            <article>
+                    <h2>Enlace absoluto<a name="absolutos"></a></h2>
+                    <p>Primero se pone el ancla al punto al cual queremos poder desplazarnos dentro del contenido de la página. Para ello usamos la etiqueta a y damos un valor al atributo name</p>
+                    <p>Segundo se crea el enlace especificando en el atributo href el nombre que le hemos dado al ancla poniendo delante el carácter #</p>
+            </article>
+            <p><a href="../index.html">Volver</a></p>
+            <p><a href="#inicio">Subir</a></p>
+        </section>
+    </main>
+</body>
+</html>
