@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+    <title>Formulario de registro de incidencias</title>
+</head>
+<body>
+    <header>
+        <h1>Envío de incidencias</h1>
+    </header>
+    <main>
+        <form action="mailto:correo@envio.com" method="POST" enctype="text/plain">
+            <input type="hidden" name="idcontacto" value="112233445566">
+            <p>
+                <label for="txtNombre">Nombre:</label><input required placeholder="Tu nombre" type="text" name="Nombre" id="txtNombre">
+            </p>
+            <p>
+                <label for="txtEmail">Correo:</label><input placeholder="Tu correo" type="email" name="email" id="txtEmail">
+            </p>
+            <p>
+                <label for="chkUrgente">Marca si es urgente:</label><input type="checkbox" name="urgente" id="chkUrgente">
+            </p>
+            <p>
+                <label for="asuntoError">Error</label><input type="radio" name="asunto" id="asuntoError" value="error">
+                <label for="asuntoSoporte">Soporte</label><input type="radio" checked name="asunto" id="asuntoSoporte" value="soporte">
+                <label for="asuntoComentario">Comentario</label><input type="radio" name="asunto" id="asuntoComentario">
+            </p>
+            <p><!-- si ponemos el atributo multiple podremos seleccionar varios valores -->
+                <label>Selecciones el sistema operativo:</label>
+                <select name="Sistema Operativo" id="so">
+                    <option value="linux">Linux</option>
+                    <option value="windows" selected>Windows</option>
+                    <option value="mac">Mac</option>
+                </select>
+            </p>
+            <p>
+                <label for="txtUrl" placeholder="http://">Escribe la Url relacionada:</label><input type="url" name="url" id="txtUrl">
+            </p>
+            <p>
+                <label for="txtUrlPatron" placeholder="http://">Escribe la Url relacionada:</label><input pattern="http:\/\/.+" required type="text" name="url" id="txtUrlPatron">
+            </p>
+            <p>
+                <label for="txtComentario">Cometarios:</label>
+                <br>
+                <textarea name="comentario" id=txtComentario rows="10" cols="30">Si tiene algo más que añadir por favor indíquelo aquí...</textarea>
+            </p>
+            <p>
+                <label for="txtFecha">Respuesta hasta el:</label><input type="date" name="fechaRespuesta" id="txtFecha">
+            </p>
+            <p>
+                <input type="reset" value="Limpiar formulario">
+                <input type="submit" value="ENVIAR">
+            </p>
+                
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -12,6 +12,12 @@ header {
     /*si pones varias fuentes según las va
     encontrado tu sistemas se usarán.*/
 }
+input:valid {
+    border: 2px solid green;
+}
+input:invalid {
+    border: 2px solid red;
+}
 header img {
     width: 48px;
     vertical-align: middle;
